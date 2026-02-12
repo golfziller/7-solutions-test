@@ -1,0 +1,14 @@
+{
+    "coins":  {
+        "lb_price": "Price: ",
+        "lb_market_cap": "Market Cap: ",
+        "lb_no_desc": "No description",
+        "lb_read_more": "Read more",
+        "lb_invite_friend": "Invite Friends",
+        "lb_invite_friend_desc": "Get bonus coins for each friend!",
+        "lb_hint_search": "Search",
+        "lb_no_coins_found": "No coins found",
+        "lb_something_went_wrong": "Something went wrong",
+        "lb_try_again": "Try Again"
+    }
+}
