@@ -29,8 +29,6 @@ class CoinDetailSheetViewModel extends BaseViewModel {
     final canLaunch = await canLaunchUrl(Uri.parse(url));
     if (canLaunch) {
       await launchUrl(Uri.parse(url));
-    } else {
-      print('Could not launch $url');
     }
   }
 }
