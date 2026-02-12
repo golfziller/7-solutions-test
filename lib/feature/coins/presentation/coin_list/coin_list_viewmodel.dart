@@ -85,9 +85,8 @@ class CoinListViewModel extends FutureViewModel {
       _loadMoreState = LoadMoreState.idle;
       rebuildUi();
     }
-    if (_loadMoreState == LoadMoreState.loading ||
-        !_pagination.hasNextPage ||
-        _loadMoreState == LoadMoreState.error) {
+    if ([LoadMoreState.loading, LoadMoreState.error].contains(_loadMoreState) ||
+        !_pagination.hasNextPage) {
       return;
     }
     _loadMoreState = LoadMoreState.loading;
