@@ -71,6 +71,7 @@ class CoinDetailSheet extends StackedView<CoinDetailSheetViewModel> {
 
   Widget _buildError(CoinDetailSheetViewModel viewModel) {
     return Center(
+      heightFactor: 0,
       child: SomethingWentwrong(
         onRetry: () => viewModel.initialData(request),
       ),
